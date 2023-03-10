@@ -1,0 +1,33 @@
+
+spring:
+  #PostgreSQL Database Config
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Users
+    username: postgres
+    password: postgres
+
+  #JPA Config
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: false
+    show-sql: true
+    
+  #MVC Config
+  mvc:
+    view:
+      suffix: .html
+  
+  #Thymeleaf Config  
+  thymeleaf:
+    prefix: classpath:static/
+    suffix: .html
+      
+  #Security Config
+  security:
+    user:
+      name: user
+      password: user
+      
+  
